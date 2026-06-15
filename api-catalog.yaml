@@ -1,11 +1,14 @@
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: spring-boot-demo-api
-  description: OpenAPI 3.0 contract definition for item manipulation.
+apiVersion: harness.io/v1
+kind: api
+identifier: springbootdemoapi
+name: Spring Boot Demo API
+type: openapi
+owner: demo-team
+orgIdentifier: playground
+projectIdentifier: mak_playground
 spec:
-  type: openapi
   lifecycle: experimental
-  owner: demo-team
   definition:
     $text: ./api-definition.yaml
+metadata:
+  description: OpenAPI 3.0 contract definition for item manipulation.
