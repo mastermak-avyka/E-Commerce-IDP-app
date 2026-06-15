@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-boot-item-service
+  title: Spring Boot Item Service
+  description: Standard microservice managing application inventory data.
+  tags:
+    - java
+    - spring-boot
+    - backend
+  links:
+    - url: https://github.com/your-github-username/spring-boot-idp-demo
+      title: Source Code
+      icon: github
+  annotations:
+    # Part 6: Point TechDocs directly to the root markdown directory
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: demo-team
+  # Part 5: Link the API entity as a consumed dependency
+  consumedApis:
+    - spring-boot-demo-api
