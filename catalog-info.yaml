@@ -1,8 +1,16 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
+apiVersion: harness.io/v1
+kind: component
+identifier: springbootitemservice
+name: Spring Boot Item Service
+type: service
+owner: demo-team
+orgIdentifier: your_org_identifier
+projectIdentifier: your_project_identifier
+spec:
+  lifecycle: experimental
+  consumedApis:
+    - spring-boot-demo-api
 metadata:
-  name: spring-boot-item-service
-  title: Spring Boot Item Service
   description: Standard microservice managing application inventory data.
   tags:
     - java
@@ -13,12 +21,4 @@ metadata:
       title: Source Code
       icon: github
   annotations:
-    # Part 6: Point TechDocs directly to the root markdown directory
     backstage.io/techdocs-ref: dir:.
-spec:
-  type: service
-  lifecycle: experimental
-  owner: demo-team
-  # Part 5: Link the API entity as a consumed dependency
-  consumedApis:
-    - spring-boot-demo-api
