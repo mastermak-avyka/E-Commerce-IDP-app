@@ -9,6 +9,6 @@ projectIdentifier: mak_playground
 spec:
   lifecycle: experimental
   definition:
-    $text: ./api-definition.yaml
+    $text: ./api-definition.yaml # This links the two files together
 metadata:
   description: OpenAPI 3.0 contract definition for item manipulation.
