@@ -4,8 +4,8 @@ identifier: springbootitemservice
 name: Spring Boot Item Service
 type: service
 owner: demo-team
-orgIdentifier: your_org_identifier
-projectIdentifier: your_project_identifier
+orgIdentifier: playground
+projectIdentifier: mak_playground
 spec:
   lifecycle: experimental
   consumedApis:
