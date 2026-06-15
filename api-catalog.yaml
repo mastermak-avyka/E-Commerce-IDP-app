@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: spring-boot-demo-api
+  description: OpenAPI 3.0 contract definition for item manipulation.
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: demo-team
+  definition:
+    $text: ./api-definition.yaml
